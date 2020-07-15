@@ -1,0 +1,8 @@
+2019/11/21 13:01:11 request method:  GET
+2019/11/21 13:01:11 request query ars:  ImmutableMultiDict([])
+2019/11/21 13:01:15 request method:  GET
+2019/11/21 13:01:15 request query ars:  ImmutableMultiDict([('message', '1231')])
+2019/11/21 13:01:17 request method:  POST
+2019/11/21 13:01:17 request form:  ImmutableMultiDict([('message_add', '1231')])
+2019/11/21 13:01:17 request method:  GET
+2019/11/21 13:01:17 request query ars:  ImmutableMultiDict([])

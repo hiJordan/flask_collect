@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet">
+    <title>notice</title>
+</head>
+<body>
+    <form action="{{ url_for('notice.add') }}" method="post" class="form-inline">
+        <input class="form-control" type="text" name="content" placeholder="add content">
+        <input class="form-control" type="text" name="author" placeholder="add author">
+        <button  class="btn btn-primary" type="submit">Add</button>
+    </form>
+    {% for c in comments %}
+        <div>
+            <p class="bg-primary">
+                {{ c.content }} by {{ c.author }} in {{ c.ct }}
+            </p>
+        </div>
+    {% endfor %}
+
+</body>
+</html>

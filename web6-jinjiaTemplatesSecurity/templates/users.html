@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>users data</title>
+</head>
+<body>
+<h1>all users info</h1>
+<br>
+<form action="/admin/users/update" method="post">
+    <input name="id" placeholder="输入id">
+    <br>
+    <input type="text" name="password" placeholder="输入新密码">
+    <br>
+    <button type="submit">更新</button>
+</form>
+<br>
+<div>
+    {% for u in users %}
+        <div>
+            {{ u.id }} {{ u.username }} {{ u.password }}
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo index</title>
+    <style>
+        .comment
+        {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">new weibo</a>
+    {% for w in weibos %}
+        <p>
+            {{ w.content }} from {{ user.username }}
+            <a href="/weibo/edit?id={{ w.id }}">edit</a>
+            <a href="/weibo/delete?id={{ w.id }}">remove</a>
+            {% for c in w.comments() %}
+                <div class="comment">
+                    {{ c.user() }} : {{ c.content }}
+                </div>
+            {% endfor %}
+            <form action="/comment/add" method="post">
+                <input name="weibo_id" type="hidden" value="{{ w.id }}">
+                <input name="content">
+                <br>
+                <button type="submit">add comment</button>
+            </form>
+        </p>
+    {% endfor %}
+</body>
+</html>

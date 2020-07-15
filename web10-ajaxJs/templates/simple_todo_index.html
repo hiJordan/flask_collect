@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SimpleTodIndex</title>
+    </head>
+    <body>
+        <form action="/add" method="post">
+            <input type="text" name="task">
+            <button type="submit">添加</button>
+        </form>
+
+        {% for todo in todos %}
+            <div>
+                {{ todo.id }} : {{ todo.task }}
+                <a href="/edit?id={{ todo.id }}">edit</a>
+                <a href="/delete?id={{ todo.id }}">remove</a>
+            </div>
+            <small>create by {{ todo.create_time }} update by {{ todo.update_time }}</small>
+        {% endfor %}
+    </body>
+</html>

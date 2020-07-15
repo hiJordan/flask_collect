@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog View</title>
+</head>
+<body>
+    <div>
+        {{ blog.title }} by {{ blog.author }}
+        <p>{{ blog.content }}</p>
+    </div>
+    <div>
+        <form action="{{ url_for('blog.add_comment') }}" method="post">
+            <input type="text" name="content">
+            <input type="text" name="author">
+            <input type="hidden" name="blog_id" value="{{ blog.id }}">
+            <button type="submit">Add comment</button>
+        </form>
+        {% for comment in comments %}
+            <div>
+                {{ comment.content }} by {{ comment.author }} in {{ comment.ct }}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

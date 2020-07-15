@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Index</title>
+</head>
+<body>
+    <form action="{{ url_for('blog.add') }}" method="post">
+        <input type="text" name="title">
+        <textarea name="content"></textarea>
+        <input type="text" name="author">
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>

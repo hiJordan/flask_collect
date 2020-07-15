@@ -1,0 +1,557 @@
+2020-06-30 18:31:44 原始请求： GET / HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2020-06-30 18:31:44 请求结束
+2020-06-30 18:31:44 raw_header:  ['Host: 127.0.0.1:3000', 'Connection: keep-alive', 'Upgrade-Insecure-Requests: 1', 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'Sec-Fetch-User: ?1', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: navigate', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8']
+2020-06-30 18:31:44 请求中没有cookies
+2020-06-30 18:31:44 path and query / {}
+2020-06-30 18:31:44 响应
+ HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo/index
+
+
+2020-06-30 18:31:44 原始请求： GET /todo/index HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2020-06-30 18:31:44 请求结束
+2020-06-30 18:31:44 raw_header:  ['Host: 127.0.0.1:3000', 'Connection: keep-alive', 'Upgrade-Insecure-Requests: 1', 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'Sec-Fetch-User: ?1', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3', 'Sec-Fetch-Site: none', 'Sec-Fetch-Mode: navigate', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8']
+2020-06-30 18:31:44 请求中没有cookies
+2020-06-30 18:31:44 path and query /todo/index {}
+2020-06-30 18:31:44 http response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo ajax</title>
+</head>
+<body>
+    <input type="text" id="id-input-todo" placeholder="请输入todo">
+    <button id="id-button-add">add</button>
+    <div class="todo-list">
+    </div>
+    <script src="/static?file=base.js"></script>
+    <script src="/static?file=todo.js"></script>
+</body>
+</html>
+2020-06-30 18:31:44 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo ajax</title>
+</head>
+<body>
+    <input type="text" id="id-input-todo" placeholder="请输入todo">
+    <button id="id-button-add">add</button>
+    <div class="todo-list">
+    </div>
+    <script src="/static?file=base.js"></script>
+    <script src="/static?file=todo.js"></script>
+</body>
+</html>
+2020-06-30 18:31:44 原始请求： GET /static?file=base.js HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2020-06-30 18:31:44 请求结束
+2020-06-30 18:31:44 raw_header:  ['Host: 127.0.0.1:3000', 'Connection: keep-alive', 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'Accept: */*', 'Sec-Fetch-Site: same-origin', 'Sec-Fetch-Mode: no-cors', 'Referer: http://127.0.0.1:3000/todo/index', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8']
+2020-06-30 18:31:44 请求中没有cookies
+2020-06-30 18:31:44 path and query /static {'file': 'base.js'}
+2020-06-30 18:31:44 响应
+ HTTP/1.1 200 OK
+
+var log = function(){
+    console.log.apply(console, arguments)
+}
+
+var e = function(sel){
+    return document.querySelector(sel)
+}
+
+var ajax = function(method, path, data, responseCallback){
+    var r = new XMLHttpRequest()
+    r.open(method, path, true)
+    r.setRequestHeader('Content-Type', 'application/json')
+    r.onreadystatechange = function(){
+        if(r.readyState === 4){
+            log(r)
+            responseCallback(r.response)
+        }
+    }
+    data = JSON.stringify(data)
+    r.send(data)
+}
+
+var apiTodoAll = function(callback){
+    var path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+var apiTodoAdd = function(form, callback){
+    var path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+
+var apiTodoDelete = function(id, callback){
+    var path = '/api/todo/delete?id=' + id
+    ajax('GET', path, '', callback)
+}
+
+var apiTodoUpdate = function(form, callback){
+    var path = '/api/todo/update'
+    ajax('POST', path, form, callback)
+}
+
+var apiWeiboAll = function(callback){
+    var path = '/api/weibo/all'
+    ajax('GET', path, '', callback)
+}
+
+var apiWeiboAdd = function(form, callback){
+    var path = '/api/weibo/add'
+    ajax('POST', path, form, callback)
+}
+
+var apiWeiboRemove = function(id, callback){
+    var path = '/api/weibo/delete?id=' + id
+    ajax('GET', path, '', callback)
+}
+
+var apiWeiboUpdate = function(form, callback){
+    var path = '/api/weibo/update'
+    ajax('POST', path, form, callback)
+}
+
+var apiCommentAdd = function(form, callback){
+    var path = '/api/weibo/comment/add'
+    ajax('POST', path, form, callback)
+}
+
+var apiCommentRemove = function(id, callback){
+    var path = '/api/weibo/comment/remove?id=' + id
+    ajax('GET', path, '', callback)
+}
+
+2020-06-30 18:31:44 原始请求： GET /static?file=todo.js HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2020-06-30 18:31:44 请求结束
+2020-06-30 18:31:44 raw_header:  ['Host: 127.0.0.1:3000', 'Connection: keep-alive', 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'Accept: */*', 'Sec-Fetch-Site: same-origin', 'Sec-Fetch-Mode: no-cors', 'Referer: http://127.0.0.1:3000/todo/index', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8']
+2020-06-30 18:31:44 请求中没有cookies
+2020-06-30 18:31:44 path and query /static {'file': 'todo.js'}
+2020-06-30 18:31:45 响应
+ HTTP/1.1 200 OK
+
+var timeString = function(timestamp){
+    t = new Date(timestamp * 1000)
+    t = t.toLocaleTimeString()
+    return t
+}
+
+var todoTemplate = function(todo){
+    var id = todo.id
+    var title = todo.title
+    var ut = timeString(todo.ut)
+    log('todo', todo)
+
+    var t = `
+        <div class="todo-cell" id="todo-${id}" data-id="${id}">
+            <button class="todo-edit-button">edit</button>
+            <button class="todo-delete-button">remove</button>
+            <span class="todo-title">${title}</span>
+            <time class="todo-ut">${ut}</time>
+        </div>
+    `
+    return t
+}
+
+var insertTodo = function(todo){
+    var todo_cell = todoTemplate(todo)
+    var todo_list = e('.todo-list')
+    todo_list.insertAdjacentHTML('beforeend', todo_cell)
+
+}
+
+var insertEditForm = function(todo_cell){
+    var edit_form = `
+        <div class="todo-edit-form">
+            <input class="todo-edit-input">
+            <button class="todo-update-button">update</button>
+        </div>
+    `
+    todo_cell.insertAdjacentHTML('beforeend', edit_form)
+}
+
+var loadTodos = function(){
+    apiTodoAll(function(r){
+        log('end data ', r)
+        var todos = JSON.parse(r)
+
+        for(var i=0; i<todos.length; i++)
+        {
+            var todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+var bindEventTodoAdd = function(){
+    var b = e('#id-button-add')
+    b.addEventListener('click', function(){
+        var input = e('#id-input-todo')
+        var title = input.value
+        var form = {
+            'title': title
+        }
+        apiTodoAdd(form, function(r){
+            var todo = JSON.parse(r)
+            insertTodo(todo)
+        })
+    })
+}
+
+var bindEventTodoDelete = function(){
+    var todo_list = e('.todo-list')
+    todo_list.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-delete-button')){
+            var todo_cell = self.parentElement
+            var todo_id = todo_cell.dataset.id
+            apiTodoDelete(todo_id, function(r){
+                log('Removed ', todo_id)
+                todo_cell.remove()
+            })
+        }
+    })
+}
+
+var bindEventTodoEdit = function(){
+    var todo_list = e('.todo-list')
+    todo_list.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-edit-button')){
+            var todo_cell = self.parentElement
+            insertEditForm(todo_cell)
+        }
+    })
+
+}
+
+var binEventTodoUpdate = function(){
+    var todo_list = e('.todo-list')
+    todo_list.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-update-button')){
+            var edit_form = self.parentElement
+            var input = edit_form.querySelector('.todo-edit-input')
+            var title = input.value
+            var todo_cell = self.closest('.todo-cell')
+            var todo_id = todo_cell.dataset.id
+            var form = {
+                'id': todo_id,
+                'title': title,
+            }
+            apiTodoUpdate(form, function(r){
+                log('updated ', todo_id)
+                var todo = JSON.parse(r)
+                var selector = '#todo-' + todo.id
+                var todo_cell = e(selector)
+                var todo_span = todo_cell.querySelector('.todo-title')
+                log('todo updata', todo, selector, todo_cell, todo_span)
+                todo_span.innerHTML = todo.title
+            })
+        }
+    })
+}
+
+var bindEvents = function(){
+    bindEventTodoAdd()
+    bindEventTodoDelete()
+    bindEventTodoEdit()
+    binEventTodoUpdate()
+}
+
+var __main = function(){
+    loadTodos()
+    bindEvents()
+}
+
+__main()
+
+2020-06-30 18:31:45 原始请求： GET /api/todo/all HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2020-06-30 18:31:45 请求结束
+2020-06-30 18:31:45 raw_header:  ['Host: 127.0.0.1:3000', 'Connection: keep-alive', 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'Content-Type: application/json', 'Accept: */*', 'Sec-Fetch-Site: same-origin', 'Sec-Fetch-Mode: cors', 'Referer: http://127.0.0.1:3000/todo/index', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8']
+2020-06-30 18:31:45 请求中没有cookies
+2020-06-30 18:31:45 path and query /api/todo/all {}
+2020-06-30 18:31:45 Load:  [
+  {
+    "id": 1,
+    "title": "测试",
+    "completed": false,
+    "ct": 1573739959,
+    "ut": 1573739959
+  },
+  {
+    "id": 2,
+    "title": "读书",
+    "completed": false,
+    "ct": 1573739970,
+    "ut": 1573739970
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "completed": false,
+    "ct": 1573739978,
+    "ut": 1573739978
+  }
+]
+2020-06-30 18:31:45 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "测试",
+    "completed": false,
+    "ct": 1573739959,
+    "ut": 1573739959
+  },
+  {
+    "id": 2,
+    "title": "读书",
+    "completed": false,
+    "ct": 1573739970,
+    "ut": 1573739970
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "completed": false,
+    "ct": 1573739978,
+    "ut": 1573739978
+  }
+]
+2020-06-30 18:31:52 原始请求： POST /api/todo/add HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Content-Length: 15
+Origin: http://127.0.0.1:3000
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+{"title":"111"}
+2020-06-30 18:31:52 请求结束
+2020-06-30 18:31:52 raw_header:  ['Host: 127.0.0.1:3000', 'Connection: keep-alive', 'Content-Length: 15', 'Origin: http://127.0.0.1:3000', 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'Content-Type: application/json', 'Accept: */*', 'Sec-Fetch-Site: same-origin', 'Sec-Fetch-Mode: cors', 'Referer: http://127.0.0.1:3000/todo/index', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8']
+2020-06-30 18:31:52 请求中没有cookies
+2020-06-30 18:31:52 path and query /api/todo/add {}
+2020-06-30 18:31:52 Load:  [
+  {
+    "id": 1,
+    "title": "测试",
+    "completed": false,
+    "ct": 1573739959,
+    "ut": 1573739959
+  },
+  {
+    "id": 2,
+    "title": "读书",
+    "completed": false,
+    "ct": 1573739970,
+    "ut": 1573739970
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "completed": false,
+    "ct": 1573739978,
+    "ut": 1573739978
+  }
+]
+2020-06-30 18:31:52 Model:  [< Todo<br>id: (1)<br>title: (测试)<br>completed: (False)<br>ct: (1573739959)<br>ut: (1573739959) ><br>, < Todo<br>id: (2)<br>title: (读书)<br>completed: (False)<br>ct: (1573739970)<br>ut: (1573739970) ><br>, < Todo<br>id: (3)<br>title: (JavaScript)<br>completed: (False)<br>ct: (1573739978)<br>ut: (1573739978) ><br>, < Todo<br>id: (4)<br>title: (111)<br>completed: (False)<br>ct: (1593513112)<br>ut: (1593513112) ><br>]
+2020-06-30 18:31:52 trans_models:  [{'id': 1, 'title': '测试', 'completed': False, 'ct': 1573739959, 'ut': 1573739959}, {'id': 2, 'title': '读书', 'completed': False, 'ct': 1573739970, 'ut': 1573739970}, {'id': 3, 'title': 'JavaScript', 'completed': False, 'ct': 1573739978, 'ut': 1573739978}, {'id': 4, 'title': '111', 'completed': False, 'ct': 1593513112, 'ut': 1593513112}]
+2020-06-30 18:31:52 Save:  db/Todo.txt [{'id': 1, 'title': '测试', 'completed': False, 'ct': 1573739959, 'ut': 1573739959}, {'id': 2, 'title': '读书', 'completed': False, 'ct': 1573739970, 'ut': 1573739970}, {'id': 3, 'title': 'JavaScript', 'completed': False, 'ct': 1573739978, 'ut': 1573739978}, {'id': 4, 'title': '111', 'completed': False, 'ct': 1593513112, 'ut': 1593513112}] [
+  {
+    "id": 1,
+    "title": "测试",
+    "completed": false,
+    "ct": 1573739959,
+    "ut": 1573739959
+  },
+  {
+    "id": 2,
+    "title": "读书",
+    "completed": false,
+    "ct": 1573739970,
+    "ut": 1573739970
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "completed": false,
+    "ct": 1573739978,
+    "ut": 1573739978
+  },
+  {
+    "id": 4,
+    "title": "111",
+    "completed": false,
+    "ct": 1593513112,
+    "ut": 1593513112
+  }
+]
+2020-06-30 18:31:52 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "111",
+  "completed": false,
+  "ct": 1593513112,
+  "ut": 1593513112
+}
+2020-06-30 18:31:55 原始请求： GET /api/todo/delete?id=4 HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2020-06-30 18:31:55 请求结束
+2020-06-30 18:31:55 raw_header:  ['Host: 127.0.0.1:3000', 'Connection: keep-alive', 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'Content-Type: application/json', 'Accept: */*', 'Sec-Fetch-Site: same-origin', 'Sec-Fetch-Mode: cors', 'Referer: http://127.0.0.1:3000/todo/index', 'Accept-Encoding: gzip, deflate, br', 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8']
+2020-06-30 18:31:55 请求中没有cookies
+2020-06-30 18:31:55 path and query /api/todo/delete {'id': '4'}
+2020-06-30 18:31:55 Load:  [
+  {
+    "id": 1,
+    "title": "测试",
+    "completed": false,
+    "ct": 1573739959,
+    "ut": 1573739959
+  },
+  {
+    "id": 2,
+    "title": "读书",
+    "completed": false,
+    "ct": 1573739970,
+    "ut": 1573739970
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "completed": false,
+    "ct": 1573739978,
+    "ut": 1573739978
+  },
+  {
+    "id": 4,
+    "title": "111",
+    "completed": false,
+    "ct": 1593513112,
+    "ut": 1593513112
+  }
+]
+2020-06-30 18:31:55 remove after models : [< Todo<br>id: (1)<br>title: (测试)<br>completed: (False)<br>ct: (1573739959)<br>ut: (1573739959) ><br>, < Todo<br>id: (2)<br>title: (读书)<br>completed: (False)<br>ct: (1573739970)<br>ut: (1573739970) ><br>, < Todo<br>id: (3)<br>title: (JavaScript)<br>completed: (False)<br>ct: (1573739978)<br>ut: (1573739978) ><br>]
+2020-06-30 18:31:55 Save:  db/Todo.txt [{'id': 1, 'title': '测试', 'completed': False, 'ct': 1573739959, 'ut': 1573739959}, {'id': 2, 'title': '读书', 'completed': False, 'ct': 1573739970, 'ut': 1573739970}, {'id': 3, 'title': 'JavaScript', 'completed': False, 'ct': 1573739978, 'ut': 1573739978}] [
+  {
+    "id": 1,
+    "title": "测试",
+    "completed": false,
+    "ct": 1573739959,
+    "ut": 1573739959
+  },
+  {
+    "id": 2,
+    "title": "读书",
+    "completed": false,
+    "ct": 1573739970,
+    "ut": 1573739970
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "completed": false,
+    "ct": 1573739978,
+    "ut": 1573739978
+  }
+]
+2020-06-30 18:31:55 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "111",
+  "completed": false,
+  "ct": 1593513112,
+  "ut": 1593513112
+}

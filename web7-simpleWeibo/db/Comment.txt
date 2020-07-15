@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "content": "666",
+    "weibo_id": 3,
+    "user_id": 0
+  },
+  {
+    "id": 1,
+    "content": "12121",
+    "weibo_id": 3,
+    "user_id": 0
+  },
+  {
+    "id": 2,
+    "content": "123",
+    "weibo_id": 3,
+    "user_id": 0
+  },
+  {
+    "id": 3,
+    "content": "12312",
+    "weibo_id": 3,
+    "user_id": 0
+  },
+  {
+    "id": 4,
+    "content": "12312",
+    "weibo_id": 3,
+    "user_id": 0
+  },
+  {
+    "id": 5,
+    "content": "commentssss",
+    "weibo_id": 5,
+    "user_id": 1
+  }
+]

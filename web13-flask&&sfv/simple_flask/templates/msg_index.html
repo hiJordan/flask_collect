@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask</title>
+</head>
+<body>
+    <form action="/msg" method="get">
+        <textarea name="message"></textarea>
+        <button type="submit">提交</button>
+    </form>
+    <form action="/msg/add" method="post">
+        <textarea name="message_add"></textarea>
+        <button type="submit">提交</button>
+    </form>
+    {% for msg in msg_list %}
+        <div>{{msg.content}}</div>
+    {% endfor %}
+</body>
+</html>

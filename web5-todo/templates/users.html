@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>users data</title>
+</head>
+<body>
+<h1>all users info</h1>
+<br>
+<form action="/admin/users/update" method="post">
+    <input name="id" value="{{user_id}}">
+    <br>
+    <input type="text" name="password" value="{{user_password}}" placeholder="输入新密码">
+    <br>
+    <button type="submit">更新</button>
+</form>
+<p>{{flash}}</p>
+<br>
+<div>{{users}}</div>
+</body>
+</html>

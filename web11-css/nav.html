@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>1, 最基础的导航栏样式 - 导航栏 css 大全</title>
+     </head>
+     <style>
+         nav {
+             background: black;
+         }
+         .gua-nav-item {
+             display: inline-block;
+             color: white;
+             padding: 20px;
+             text-decoration: none;
+             text-align: center;
+         }
+         .gua-nav-item:hover {
+             background-color: white;
+             color: black;
+             cursor: pointer;
+         }
+         a.gua-active {
+             background: red;
+         }
+         a.gua-right {
+             float: right;
+         }
+     </style>
+     <body>
+         <!--
+         nav 是 HTML5 里面的新标签, 和 div 一样的, 默认 display: block
+         这里当然用 div 也是完全没问题的, 只是你要加 class(不然怎么设置专有样式呢?)
+         但是在 HTML5 中你完全可以用任意自定义标签, 自己设置它的样式就可以了
+         -->
+         <nav>
+           <a class="gua-nav-item gua-active" href="">首页</a>
+           <a class="gua-nav-item" href="">博客</a>
+           <a class="gua-nav-item" href="">宝库</a>
+           <a class="gua-nav-item gua-right" href="">关于</a>
+         </nav>
+     </body>
+</html>

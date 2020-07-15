@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleTodoEdit</title>
+</head>
+<body>
+    <form action="/update?id={{ todo.id }}" method="post">
+        <input name="task" type="text" value="{{ todo.task }}" placeholder="输入需修改的值">
+        <button type="submit">修改</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+19:45:14 delete request method:  GET
+20:47:22 kwargs,  {} <class 'dict'>
+20:51:52 kwargs,  {} <class 'dict'>
+20:54:57 kwargs,  {} <class 'dict'>
+20:55:02 kwargs,  {} <class 'dict'>
+20:59:56 kwargs,  {} <class 'dict'>
+21:03:07 kwargs,  {} <class 'dict'>
+21:03:12 kwargs,  {} <class 'dict'>
+21:03:28 kwargs,  {} <class 'dict'>
+21:03:42 kwargs,  {} <class 'dict'>
+21:17:57 kwargs,  {'id': 1} <class 'dict'>
+21:17:57 kwargs,  {'blog_id': 1} <class 'dict'>
+21:35:54 kwargs,  {'id': 1} <class 'dict'>
+21:35:54 kwargs,  {'blog_id': 1} <class 'dict'>
+21:36:20 kwargs,  {'id': 1} <class 'dict'>
+21:36:20 kwargs,  {'blog_id': 1} <class 'dict'>
+21:36:54 kwargs,  {'id': 1} <class 'dict'>
+21:36:54 kwargs,  {'blog_id': 1} <class 'dict'>
+21:40:32 kwargs,  {'id': 1} <class 'dict'>
+21:40:32 kwargs,  {'blog_id': 1} <class 'dict'>
+21:41:07 kwargs,  {'id': 1} <class 'dict'>
+21:41:07 kwargs,  {'blog_id': 1} <class 'dict'>
+21:41:14 kwargs,  {'id': 2} <class 'dict'>
+21:41:14 kwargs,  {'blog_id': 2} <class 'dict'>
+21:41:14 kwargs,  {'id': 2} <class 'dict'>
+21:41:14 kwargs,  {'blog_id': 2} <class 'dict'>
+21:41:21 kwargs,  {'id': 2} <class 'dict'>
+21:41:21 kwargs,  {'blog_id': 2} <class 'dict'>
+21:41:25 kwargs,  {'id': 2} <class 'dict'>
+21:41:25 kwargs,  {'blog_id': 2} <class 'dict'>
+18:30:50 kwargs,  {'id': 2} <class 'dict'>
+18:30:50 kwargs,  {'blog_id': 2} <class 'dict'>
+18:30:59 kwargs,  {'id': 3} <class 'dict'>
+18:30:59 kwargs,  {'blog_id': 3} <class 'dict'>
+18:30:59 kwargs,  {'id': 1} <class 'dict'>
+18:30:59 kwargs,  {'blog_id': 1} <class 'dict'>
+18:31:04 kwargs,  {'id': 1} <class 'dict'>
+18:31:04 kwargs,  {'blog_id': 1} <class 'dict'>

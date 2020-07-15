@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/2.3.0/socket.io.js"></script>
+    <script>
+        var socket;
+        var current_channel = '';
+
+        var change_channel = function(channel)
+        {
+            document.title = '聊天室 - ' + channel;
+            if(current_channel)
+            {
+                $('#id-div-channels-title').text(document.title);
+            }
+            else
+            {
+                $('#id-div-channels-title').text('聊天室 - 未加入');
+            }
+        }
+
+        var clear_board = function()
+        {
+            $('#id-chat-area').val('');
+            console.log(current_channel + ' is cleared.');
+        }
+
+        $(function(){
+            socket = io.connect('ws://' + document.domain + ':' + location.port + '/chat')
+            socket.on('connect', function(){
+                console.log('connect');
+                clear_board();
+            });
+            change_channel(current_channel);
+
+            socket.on('status', function(data){
+                $('#id-chat-area').val($('#id-chat-area').val() + '<' + data.msg + '>\n');
+            });
+
+            socket.on('message', function(data){
+                $('#id-chat-area').val($('#id-chat-area').val() + data.msg + '\n');
+            });
+
+            $('#text').keypress(function(e){
+                var code = e.keyCode || e.which;
+                if(code == 13)
+                {
+                    if(!current_channel)
+                    {
+                        console.log('no change_channel: ', current_channel);
+                        $('#text').val('');
+                        alert('No change channel.');
+                        return;
+                    }
+                    var text = $('#text').val();
+                    $('#text').val('');
+                    socket.emit('text', {msg: text, room: current_channel});
+                }
+            });
+
+            $('.rc-channel').on('click', function(e){
+                if(current_channel)
+                {
+                    socket.emit('left', {}, function(){
+                        console.log('left room.');
+                    });
+                }
+                current_channel = $(this).text();
+                change_channel(current_channel);
+                clear_board();
+                socket.emit('joined', {msg: current_channel});
+                $('#id-chat-area').empty();
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="id-div-channels" class="rc-left">
+    <h3 id="id-div-channels-title">聊天室</h3>
+    <a class="rc-channel" href="#">first</a>
+    <a class="rc-channel" href="#">second</a>
+    <a class="rc-channel" href="#">third</a>
+</div>
+<textarea id="id-chat-area" rows="20" cols="80"></textarea><br><br>
+<input id="text" placeholder="input chat info" size="80">
+</body>
+</html>
